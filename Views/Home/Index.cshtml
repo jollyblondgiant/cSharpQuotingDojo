@@ -1,0 +1,13 @@
+@using QuotingDojo.Models;
+@model Quote
+<form asp-action="quotes" asp-controller="Home" method="POST">
+    <span asp-validation-for="User"></span>
+    <label asp-for="User"></label>
+    <input asp-for="User">
+
+    <span asp-validation-for="Text"></span>
+    <label asp-for="Text"></label>
+    <input type="textarea" asp-for="Text">
+
+    <input value="Add Quote" type="submit">
+</form>

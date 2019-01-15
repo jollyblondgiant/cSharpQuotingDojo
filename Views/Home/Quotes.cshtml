@@ -1,0 +1,5 @@
+<h1>Here are some Awesome Quotes!</h1>
+@foreach(var quote in ViewBag.Quotes)
+{
+    <p>@quote["User"] @quote["Text"]</p>
+}
